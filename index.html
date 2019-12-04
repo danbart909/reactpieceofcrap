@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>React Hello World</title>
+</head>
+<body>
+  <div id="application-root">
+		<div id="application-2">
+		</div>
+	</div>
+
+	<script src="https://unpkg.com/react@16/umd/react.development.js">
+	</script>
+	<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+	</script>
+	<script src="https://unpkg.com/@babel/standalone@7.5.4/babel.min.js" crossorigin>
+	</script>
+
+	<script type="text/babel">
+		const appRoot = document.querySelector('#application-root')
+
+		function Hello() {
+			return (
+				<div>
+			<section>
+        <h2>Contact Info</h2>
+        <u1>
+          <li>My name is Sally Student</li>
+          <li>My email is <address><a href="mailto:sallystudent@gmail.com" target="_blank">sallystudent@gmail.com</a></address></li>
+          <li>My phone number is 111.111.1111</li>
+          <li>My picture is <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="its me, Sally Student" width="240" height="360" /></li>
+        </u1>
+    <script src="script.js"></script>
+      </section>
+      <section>
+        <h2>Employment History</h2>
+        <p>Job 1</p>
+        <u1>
+          <li>Company Name</li>
+          <li>Job Title</li>
+          <li>Dates of Employment</li>
+          <li>Short description of job</li>
+          </u1>
+        <p>Job 2</p>
+        <u1>
+          <li>Company Name</li>
+          <li>Job Title</li>
+          <li>Dates of Employment</li>
+          <li>Short description of job</li>
+          </u1>
+      </section>
+			</div>
+			)
+		}
+
+		ReactDOM.render(<Hello/>, appRoot)
+
+	</script>
+</body>
+</html>
